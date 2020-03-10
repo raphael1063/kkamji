@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.StudyActivities.SelectModeActivity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <View
+        android:id="@+id/btn_auto_learning"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/rounded_btn_vocabook"
+        app:layout_constraintBottom_toTopOf="@+id/guideline7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <View
+        android:id="@+id/btn_blackPaper"
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_btn_pronun"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/jalnan"
+        android:text="자동학습모드"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_auto_learning"
+        app:layout_constraintStart_toStartOf="@+id/btn_auto_learning"
+        app:layout_constraintTop_toTopOf="@+id/btn_auto_learning" />
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/jalnan"
+        android:text="깜지모드"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_blackPaper"
+        app:layout_constraintStart_toStartOf="@+id/btn_blackPaper"
+        app:layout_constraintTop_toTopOf="@+id/btn_blackPaper" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="자동으로 단어와 의미를 순차적으로 보여주는 모드"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_auto_learning"
+        app:layout_constraintStart_toStartOf="@+id/btn_auto_learning"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        android:text="외울때까지 반복해서 의미를 적어가는 모드"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/btn_blackPaper"
+        app:layout_constraintStart_toStartOf="@+id/btn_blackPaper"
+        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+</androidx.constraintlayout.widget.ConstraintLayout>

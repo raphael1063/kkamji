@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vocabook_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingStart="13dp"
+    android:paddingLeft="13dp"
+    android:paddingTop="5dp"
+    android:paddingEnd="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="5dp"
+    android:elevation="2dp">
+
+    <com.buildware.widget.indeterm.IndeterminateCheckBox
+        android:id="@+id/check_vocabook_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/jalnan"
+        android:text="CheckBox"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp"
+        app:indeterminate="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/btn_expand_toggle"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="0"
+        android:src="@drawable/circle_plus"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/check_num_of_words_vocabook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/jalnan"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/check_vocabook_title"
+        app:layout_constraintStart_toEndOf="@+id/check_vocabook_title"
+        app:layout_constraintTop_toTopOf="@+id/check_vocabook_title" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

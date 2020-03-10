@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Activities.GameActivities.GameResultActivity">
+
+    <ImageView
+        android:id="@+id/result2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="84dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/first" />
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_button_login"
+        android:text="다시하기"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sUser2" />
+
+    <Button
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/rounded_border_orange"
+        android:text="나가기"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/retry"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/retry"
+        app:layout_constraintTop_toTopOf="@+id/retry"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center"
+        android:text="결과"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/secondEmoji"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/result2"
+        app:layout_constraintEnd_toEndOf="@+id/result2"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="@+id/result2"
+        app:srcCompat="@drawable/first_place" />
+
+    <ImageView
+        android:id="@+id/thirdEmoji"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/result3"
+        app:layout_constraintEnd_toEndOf="@+id/result3"
+        app:layout_constraintStart_toStartOf="@+id/result3"
+        app:srcCompat="@drawable/third_place" />
+
+    <ImageView
+        android:id="@+id/fourthEmoji"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/result4"
+        app:layout_constraintEnd_toEndOf="@+id/result4"
+        app:layout_constraintStart_toStartOf="@+id/result4"
+        app:srcCompat="@drawable/fourth_place" />
+
+    <ImageView
+        android:id="@+id/firstEmoji"
+        android:layout_width="55dp"
+        android:layout_height="57dp"
+        android:layout_marginBottom="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/result1"
+        app:layout_constraintEnd_toEndOf="@+id/result1"
+        app:layout_constraintStart_toStartOf="@+id/result1"
+        app:srcCompat="@drawable/second_place" />
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/secondEmoji"
+        app:layout_constraintEnd_toEndOf="@+id/secondEmoji"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/secondEmoji" />
+
+    <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/firstEmoji"
+        app:layout_constraintEnd_toEndOf="@+id/firstEmoji"
+        app:layout_constraintStart_toStartOf="@+id/firstEmoji" />
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/thirdEmoji"
+        app:layout_constraintEnd_toEndOf="@+id/thirdEmoji"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/thirdEmoji" />
+
+    <TextView
+        android:id="@+id/fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="TextView"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/fourthEmoji"
+        app:layout_constraintEnd_toEndOf="@+id/fourthEmoji"
+        app:layout_constraintStart_toStartOf="@+id/fourthEmoji" />
+
+    <TextView
+        android:id="@+id/sUser1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@+id/result1"
+        app:layout_constraintStart_toStartOf="@+id/result1"
+        app:layout_constraintTop_toBottomOf="@+id/result1" />
+
+    <TextView
+        android:id="@+id/sUser2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@+id/result2"
+        app:layout_constraintStart_toStartOf="@+id/result2"
+        app:layout_constraintTop_toBottomOf="@+id/result2" />
+
+    <TextView
+        android:id="@+id/sUser3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@+id/result3"
+        app:layout_constraintHorizontal_bias="0.555"
+        app:layout_constraintStart_toStartOf="@+id/result3"
+        app:layout_constraintTop_toBottomOf="@+id/result3" />
+
+    <TextView
+        android:id="@+id/sUser4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="TextView"
+        android:textColor="#3F51B5"
+        app:layout_constraintEnd_toEndOf="@+id/result4"
+        app:layout_constraintStart_toStartOf="@+id/result4"
+        app:layout_constraintTop_toBottomOf="@+id/result4" />
+
+    <ImageView
+        android:id="@+id/result1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintEnd_toStartOf="@+id/result2"
+        app:srcCompat="@drawable/second" />
+
+    <ImageView
+        android:id="@+id/result3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintStart_toEndOf="@+id/result2"
+        app:srcCompat="@drawable/third" />
+
+    <ImageView
+        android:id="@+id/result4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/guideline6"
+        app:layout_constraintStart_toEndOf="@+id/result3"
+        app:srcCompat="@drawable/fourth" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="270dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

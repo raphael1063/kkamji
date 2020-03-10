@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/gameLayout"
+
+    android:layout_width="fill_parent"
+
+    android:layout_height="fill_parent"
+    android:background="#19CDDC39"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="447dp">
+
+        <ProgressBar
+            android:id="@+id/timer"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progressTint="#009688"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#70636363"
+            app:layout_constraintBottom_toBottomOf="@+id/llCanvas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/llCanvas"
+            app:layout_constraintVertical_bias="0.56"
+            app:srcCompat="@drawable/btn_start" />
+
+        <LinearLayout
+            android:id="@+id/llMenu"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:background="#CACACA"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageButton
+                android:id="@+id/btnWHITE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_white" />
+
+            <ImageButton
+                android:id="@+id/btnBLACK"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_black" />
+
+            <ImageButton
+                android:id="@+id/btnRED"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_red" />
+
+            <ImageButton
+                android:id="@+id/btnORANGE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_orange" />
+
+            <ImageButton
+                android:id="@+id/btnYELLOW"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_yellow" />
+
+            <ImageButton
+                android:id="@+id/btnGREEN"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_green" />
+
+            <ImageButton
+                android:id="@+id/btnBLUE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_blue" />
+
+            <ImageButton
+                android:id="@+id/btnPURPLE"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_purple" />
+
+            <ImageButton
+                android:id="@+id/btnPINK"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_pink" />
+
+            <ImageButton
+                android:id="@+id/btnBROWN"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/color_brown" />
+
+            <ImageButton
+                android:id="@+id/btnRESET"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#00FFFFFF"
+                android:onClick="btnClick"
+                app:srcCompat="@drawable/delete" />
+
+        </LinearLayout>
+
+<ImageView
+            android:id="@+id/userImage1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="68dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timer"
+            app:srcCompat="@drawable/hmm" />
+
+        <ImageView
+            android:id="@+id/userImage4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="136dp"
+            app:layout_constraintBottom_toBottomOf="@+id/llMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:srcCompat="@drawable/hmm" />
+
+        <ImageView
+            android:id="@+id/userImage2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timer"
+            app:srcCompat="@drawable/hmm" />
+
+        <ImageView
+            android:id="@+id/userImage3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="136dp"
+            app:layout_constraintBottom_toBottomOf="@+id/llMenu"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/hmm" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/firework1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/userImage1"
+            app:layout_constraintEnd_toEndOf="@+id/userImage1"
+            app:layout_constraintStart_toStartOf="@+id/userImage1"
+            app:layout_constraintTop_toTopOf="@+id/userImage1"
+            app:lottie_fileName="firework.json" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/firework2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/userImage2"
+            app:layout_constraintEnd_toEndOf="@+id/userImage2"
+            app:layout_constraintStart_toStartOf="@+id/userImage2"
+            app:layout_constraintTop_toTopOf="@+id/userImage2"
+            app:lottie_fileName="firework.json" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/firework3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/userImage3"
+            app:layout_constraintEnd_toEndOf="@+id/userImage3"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/userImage3"
+            app:layout_constraintTop_toTopOf="@+id/userImage3"
+            app:layout_constraintVertical_bias="1.0"
+            app:lottie_fileName="firework.json" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/firework4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintBottom_toBottomOf="@+id/userImage4"
+            app:layout_constraintEnd_toEndOf="@+id/userImage4"
+            app:layout_constraintStart_toStartOf="@+id/userImage4"
+            app:layout_constraintTop_toTopOf="@+id/userImage4"
+            app:lottie_fileName="firework.json" />
+
+        <TextView
+            android:id="@+id/chatBubble1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="48dp"
+            android:background="@drawable/balloon_grey_left"
+            android:elevation="1dp"
+            android:fontFamily="@font/misaeng"
+            android:text="chatBubble1"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/userImage1"
+            app:layout_constraintTop_toTopOf="@+id/userImage1" />
+
+        <TextView
+            android:id="@+id/chatBubble2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/balloon_grey_right"
+            android:elevation="1dp"
+            android:fontFamily="@font/misaeng"
+            android:text="chatBubble2"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/userImage2"
+            app:layout_constraintTop_toTopOf="@+id/userImage2" />
+
+        <TextView
+            android:id="@+id/chatBubble3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="36dp"
+            android:background="@drawable/balloon_grey_left"
+            android:elevation="1dp"
+            android:fontFamily="@font/misaeng"
+            android:text="chatBubble3"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toEndOf="@+id/userImage3"
+            app:layout_constraintTop_toTopOf="@+id/userImage3" />
+
+        <TextView
+            android:id="@+id/chatBubble4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="4dp"
+            android:background="@drawable/balloon_grey_right"
+            android:elevation="1dp"
+            android:fontFamily="@font/misaeng"
+            android:text="chatBubble4"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/userImage4"
+            app:layout_constraintTop_toTopOf="@+id/userImage4" />
+
+        <TextView
+            android:id="@+id/textUserID1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textUserID1"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/userImage1"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/userImage1"
+            app:layout_constraintTop_toBottomOf="@+id/userImage1" />
+
+        <TextView
+            android:id="@+id/textUserID4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textUserID4"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/userImage4"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/userImage4"
+            app:layout_constraintTop_toBottomOf="@+id/userImage4" />
+
+        <TextView
+            android:id="@+id/textUserID2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textUserID2"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/userImage2"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/userImage2"
+            app:layout_constraintTop_toBottomOf="@+id/userImage2" />
+
+        <TextView
+            android:id="@+id/textUserID3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="textUserID3"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/userImage3"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/userImage3"
+            app:layout_constraintTop_toBottomOf="@+id/userImage3" />
+
+<EditText
+            android:id="@+id/editChat"
+
+            android:layout_width="339dp"
+
+            android:layout_height="46dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnSend"
+
+            android:layout_width="64dp"
+
+            android:layout_height="45dp"
+
+            android:background="@drawable/rounded_button_login"
+            android:text="전송"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/editChat"
+            app:layout_constraintTop_toTopOf="@+id/editChat" />
+
+        <LinearLayout
+            android:id="@+id/llCanvas"
+            android:layout_width="270dp"
+            android:layout_height="325dp"
+            android:layout_marginBottom="56dp"
+            android:layout_weight="1"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@+id/llMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.51"
+            app:layout_constraintStart_toStartOf="parent">
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/announcement"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/anbox"
+            android:fontFamily="@font/misaeng"
+            android:gravity="center"
+            android:text="3"
+            android:textColor="#000000"
+            android:textSize="90sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/timer"
+            app:layout_constraintVertical_bias="0.49" />
+
+        <TextView
+            android:id="@+id/suggestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/misaeng"
+            android:text="apple"
+            android:textColor="#000000"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/llCanvas"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+        <TextView
+            android:id="@+id/textSuggest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="제시어 :    "
+            android:textColor="#3F51B5"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="@+id/suggestion"
+            app:layout_constraintEnd_toStartOf="@+id/suggestion"
+            app:layout_constraintTop_toTopOf="@+id/suggestion"
+            app:layout_constraintVertical_bias="0.5" />
+
+        <TextView
+            android:id="@+id/timeText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+        <TextView
+            android:id="@+id/hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/timer" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/sv"
+        android:layout_width="match_parent"
+        android:layout_height="291dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chatting"
+
+                android:layout_width="fill_parent"
+
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

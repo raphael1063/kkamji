@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.android">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_logo"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_logo_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".Activities.AccountActivities.ChangePasswordDialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".Activities.GameActivities.GameResultActivity"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".Activities.GameActivities.GameActivity" />
+        <activity android:name=".Activities.StudyActivities.TestResultActivity" />
+        <activity android:name=".Activities.StudyActivities.TestActivity" />
+        <activity
+            android:name=".Dialogs.TestTimePickerDialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".Activities.StudyActivities.BlackPaperResultActivity" />
+        <activity android:name=".Activities.StudyActivities.PronunActivity" />
+        <activity android:name=".Activities.StudyActivities.BlackPaperActivity" />
+        <activity android:name=".Activities.StudyActivities.AutoLearningActivity" />
+        <activity android:name=".Activities.StudyActivities.SelectChapterActivity" />
+        <activity android:name=".Activities.StudyActivities.SelectModeActivity" />
+        <activity android:name=".Activities.StudyActivities.AddChapterActivity" />
+        <activity android:name=".Activities.StudyActivities.ChapterActivity" />
+        <activity
+            android:name=".Dialogs.AddVocabookDialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".Activities.StudyActivities.MyVocaBookActivity" />
+        <activity android:name=".Activities.AccountActivities.BugReportActivity" />
+        <activity android:name=".Activities.AccountActivities.AccountActivity" />
+        <activity
+            android:name=".Dialogs.EmailAuthDialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity
+            android:name=".UploadImageDialog"
+            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+        <activity android:name=".Activities.AccountActivities.RegisterActivity" />
+        <activity android:name=".Activities.AccountActivities.PolicyActivity" />
+        <activity android:name=".Activities.MainActivity" />
+        <activity android:name=".Activities.IntroActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Activities.AccountActivities.LoginActivity" />
+
+        <service android:name=".Service.MyFireBaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>
