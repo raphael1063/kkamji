@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.android">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.wonjin.android">
 
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
 
     <application
         android:allowBackup="true"
@@ -19,40 +22,106 @@
 
         <activity
             android:name=".Activities.AccountActivities.ChangePasswordDialog"
-            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Activities.GameActivities.GameResultActivity"
-            android:theme="@style/Theme.AppCompat.Light.Dialog" />
-        <activity android:name=".Activities.GameActivities.GameActivity" />
-        <activity android:name=".Activities.StudyActivities.TestResultActivity" />
-        <activity android:name=".Activities.StudyActivities.TestActivity" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.GameActivities.GameActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.TestResultActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.TestActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Dialogs.TestTimePickerDialog"
-            android:theme="@style/Theme.AppCompat.Light.Dialog" />
-        <activity android:name=".Activities.StudyActivities.BlackPaperResultActivity" />
-        <activity android:name=".Activities.StudyActivities.PronunActivity" />
-        <activity android:name=".Activities.StudyActivities.BlackPaperActivity" />
-        <activity android:name=".Activities.StudyActivities.AutoLearningActivity" />
-        <activity android:name=".Activities.StudyActivities.SelectChapterActivity" />
-        <activity android:name=".Activities.StudyActivities.SelectModeActivity" />
-        <activity android:name=".Activities.StudyActivities.AddChapterActivity" />
-        <activity android:name=".Activities.StudyActivities.ChapterActivity" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.BlackPaperResultActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.PronunActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.BlackPaperActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.AutoLearningActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.SelectChapterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.SelectModeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.AddChapterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.ChapterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Dialogs.AddVocabookDialog"
-            android:theme="@style/Theme.AppCompat.Light.Dialog" />
-        <activity android:name=".Activities.StudyActivities.MyVocaBookActivity" />
-        <activity android:name=".Activities.AccountActivities.BugReportActivity" />
-        <activity android:name=".Activities.AccountActivities.AccountActivity" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.StudyActivities.MyVocaBookActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.AccountActivities.BugReportActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.AccountActivities.AccountActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".Dialogs.EmailAuthDialog"
-            android:theme="@style/Theme.AppCompat.Light.Dialog" />
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            tools:ignore="LockedOrientationActivity" />
         <activity
             android:name=".UploadImageDialog"
-            android:theme="@style/Theme.AppCompat.Light.Dialog" />
-        <activity android:name=".Activities.AccountActivities.RegisterActivity" />
-        <activity android:name=".Activities.AccountActivities.PolicyActivity" />
-        <activity android:name=".Activities.MainActivity" />
-        <activity android:name=".Activities.IntroActivity">
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.Dialog"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.AccountActivities.RegisterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.AccountActivities.PolicyActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name=".Activities.IntroActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -60,13 +129,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Activities.AccountActivities.LoginActivity" />
+        <activity
+            android:name=".Activities.AccountActivities.LoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
 
         <service android:name=".Service.MyFireBaseMessagingService">
             <intent-filter>
                 <action android:name="com.google.firebase.MESSAGING_EVENT" />
             </intent-filter>
         </service>
+
     </application>
 
 </manifest>

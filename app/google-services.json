@@ -8,12 +8,20 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:192974618813:android:a30e890235ce56dbffb7d4",
+        "mobilesdk_app_id": "1:192974618813:android:f55cd7e5aec3d84affb7d4",
         "android_client_info": {
-          "package_name": "com.example.android"
+          "package_name": "com.wonjin.android"
         }
       },
       "oauth_client": [
+        {
+          "client_id": "192974618813-i4ogeu14l44ps1d9o7m8c3m3ra0ghvop.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.wonjin.android",
+            "certificate_hash": "b87c01588da54a39331023f44d043154f275bad0"
+          }
+        },
         {
           "client_id": "192974618813-oq763jhfgsfd75auno3qi7ejs9jmc0ha.apps.googleusercontent.com",
           "client_type": 3
